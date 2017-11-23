@@ -1,0 +1,40 @@
+#navi a {
+    color: #ff0099;
+    font-family: monospace;
+    text-transform: uppercase;
+    background-color: #333333;
+    width: 100%; 
+    margin: 20px 10px;
+    padding: 10px 20px;    
+}
+#navi a:visited {
+    color: #ff0099;
+}
+#navi ul {
+   background-color: #333333;
+   padding: 10px 20px;
+}
+#navi li {
+   display: inline-block;
+}
+.subtitle {
+   color: #ff0099;
+}
+.intro {
+    font-family: consolas, courier;
+    
+}
+#dots, #wiki {
+    text-align: center;
+    padding: 10px;
+    font-size: 28px;
+}
+main p {
+    font-family: consolas, courier;
+    font-size: 14px;
+}
+body{
+    background-image: url(.././Images/topography.png);
+    padding-left: 10%;
+    padding-right: 10%;
+}
