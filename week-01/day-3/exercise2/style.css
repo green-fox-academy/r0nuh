@@ -1,12 +1,12 @@
 body {
   border: 16px solid #4285F4;
-  margin: 0px 1104px 0px 0px;
+  margin: 0px;
+  max-width: 400px;
 
 }
 p {
   font-size: 36px;
   color: white;
-  width: 300px;
   margin: 0px;
   text-align: center;
   font-family: arial;
@@ -15,7 +15,6 @@ p {
 }
 p:nth-child(1) {
   background-color: #E67676;
-  margin-right: inherit;
 }
 p:nth-child(2) {
   background-color: #F2F062;
