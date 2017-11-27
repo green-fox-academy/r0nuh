@@ -12,33 +12,28 @@ namespace excercise5
         {
             // Create a program that prints a few operations on two numbers: 22 and 13
 
-            int number1;
-            int number2;
-
-            number1 = 13;
-            number2 = 22;
+            int number1 = 13;
+            int number2 = 22;
 
             // Print the result of 13 added to 22
-            Console.WriteLine(value: number2 + number1);
+            Console.WriteLine(number2 + number1);
 
             // Print the result of 13 substracted from 22
-            Console.WriteLine(value: number2 - number1);
+            Console.WriteLine(number2 - number1);
 
             // Print the result of 22 mutiplied by 13
-            Console.WriteLine(value: number2 * number1);
-
+            Console.WriteLine(number2 * number1);
 
             // Print the result of 22 divided by 13 (as a decimal fraction)
-          
-            Console.WriteLine(value: number2 / (double)number1);
+            Console.WriteLine(number2 / (double)number1);
 
             // Print the integer part of 22 divided by 13
-            Console.WriteLine(value: number2 / number1);
+            Console.WriteLine(number2 / number1);
 
             // Print the reminder of 22 divided by 13
-            Console.WriteLine(value: number2 % number1);
+            Console.WriteLine(number2 % number1);
 
-            Console.ReadLine();
+            Console.Read();
         }
     }
 }

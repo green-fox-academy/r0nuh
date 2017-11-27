@@ -19,7 +19,7 @@ namespace exercise6
             //
             // Print how many hours is spent with coding in a semester by an attendee,
             // if the attendee only codes on workdays.
-            Console.WriteLine(value: 5 * hours * weeks);
+            Console.WriteLine(5 * hours * weeks);
             //
             // Print the percentage of the coding hours in the semester if the average
             // work hours weekly is 52
@@ -27,7 +27,7 @@ namespace exercise6
             percentage = (hours * 5) / 52.0 * 100;
             Console.WriteLine(percentage + "%");
 
-            Console.ReadLine();
+            Console.Read();
 
         }
     }
