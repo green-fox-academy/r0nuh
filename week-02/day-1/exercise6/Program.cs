@@ -24,7 +24,7 @@ namespace exercise6
             // Print the percentage of the coding hours in the semester if the average
             // work hours weekly is 52
             double percentage;
-            percentage = (hours * 5) / 52.0 * 100;
+            percentage = (hours * 5) / 52 * 100;
             Console.WriteLine(percentage + "%");
 
             Console.Read();
