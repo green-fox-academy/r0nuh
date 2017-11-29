@@ -13,11 +13,10 @@ namespace TakesLonger
             // Add "always takes longer than" to the StringBuilder (quote) between the words "It" and "you"
             // Using pieces of the quote variable (instead of just redefining the string)
 
-            StringBuilder fix = new StringBuilder();
+            StringBuilder fix = new StringBuilder(quote);
             
-            fix.Append("Hofstadter's Law: It ");
-            fix.Append("always takes longer than ");
-            fix.Append("you expect, even when you take into account Hofstadter's Law.");
+            int index1 = quote.IndexOf("you");
+            fix.Insert(index1, "always takes longer than ");
 
             Console.WriteLine(fix);
             Console.Read();
