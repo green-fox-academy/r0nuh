@@ -17,9 +17,9 @@ namespace Greet
             Console.ReadLine();
         }
 
-        static void Greet(string al)
+        static void Greet(string all)
         {
-            Console.WriteLine("Hi there " + al + "!");
+            Console.WriteLine("Hi there " + all + "!");
         }
     }
 }

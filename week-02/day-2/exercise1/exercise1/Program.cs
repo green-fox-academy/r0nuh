@@ -16,9 +16,9 @@ namespace Doubling
             Console.ReadLine();
         }
 
-        public static void Doubling(int ak)
+        public static void Doubling(int x)
         {
-            Console.WriteLine(ak * 2);
+            Console.WriteLine(x * 2);
         }
     }
 }

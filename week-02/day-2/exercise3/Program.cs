@@ -16,9 +16,9 @@ namespace AppendA
             AppendA(am);
             Console.ReadLine();
         }
-        static void AppendA(string am)
+        static void AppendA(string a)
         {
-            Console.WriteLine(am + "a");
+            Console.WriteLine(a + "a");
         }
     }
 }

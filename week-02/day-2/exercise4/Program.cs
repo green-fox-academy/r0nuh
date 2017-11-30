@@ -14,14 +14,14 @@ namespace Sum
             Console.ReadLine();
         }
 
-        static void Sum(int x)
+        static void Sum(int y)
         {
             int j = 0;
-            for(int i = 0; i < x; i++)
+            for(int i = 0; i < y; i++)
             {
                 j += i;
             }
-            Console.WriteLine(x + j);
+            Console.WriteLine(y + j);
         }
     }
 }
