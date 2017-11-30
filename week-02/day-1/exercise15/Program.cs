@@ -10,7 +10,7 @@ namespace GreenFox
             // then it converts that value to miles and prints it
 
             //Console.Write("km: ");
-            int km = Convert.ToInt32(Console.Read());
+            int km = Convert.ToInt32(Console.ReadLine());
 
             Console.WriteLine(km * 0.621371);
             Console.ReadLine();
