@@ -9,10 +9,10 @@ namespace GreenFox
             // Write a program that asks for an integer that is a distance in kilometers,
             // then it converts that value to miles and prints it
 
-            //Console.Write("km: ");
+            Console.Write("km: ");
             int km = Convert.ToInt32(Console.ReadLine());
 
-            Console.WriteLine(km * 0.621371);
+            Console.WriteLine("mile: " + km * 0.621371);
             Console.ReadLine();
         }
     }
