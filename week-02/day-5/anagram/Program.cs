@@ -10,17 +10,20 @@ namespace anagram
     {
         static void Main(string[] args)
         {
+            Anagram();
 
+        }
+        static void Anagram()
+        {
             Console.WriteLine("Give two words:");
             string input1 = Console.ReadLine();
-            string reverse1 = new string(input1.ToCharArray().Reverse().ToArray());
-
             string input2 = Console.ReadLine();
+
             string reverse2 = new string(input2.ToCharArray().Reverse().ToArray());
 
-            //char[] input1array = input1.ToCharArray();
-            Console.WriteLine(input2);
+            Console.WriteLine(String.Equals(input1, reverse2));
             Console.Read();
+
         }
     }
 }
