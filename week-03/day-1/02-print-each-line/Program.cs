@@ -15,7 +15,7 @@ namespace _02_print_each_line
 
             try
             {
-            string content = File.ReadAllText(@"C:\Users\Szilard\Documents\greenfox\my-file.txt");
+            string content = File.ReadAllText(@"C:\Users\Szilard\Documents\greenfox\r0nuh\week-03\day-1\my-file.txt");
                 Console.WriteLine(content);
             }
             catch (Exception)
