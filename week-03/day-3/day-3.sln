@@ -15,6 +15,8 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "05-horizontal", "05-horizon
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "06-centered-square", "06-centered-square\06-centered-square.csproj", "{42B2795C-426E-4227-9A24-56356D3A1EA3}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "07-four-color-rectangles", "07-four-color-rectangles\07-four-color-rectangles.csproj", "{F43DB271-F5C8-42B9-B1E7-238AB4F9C8AE}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -45,6 +47,10 @@ Global
 		{42B2795C-426E-4227-9A24-56356D3A1EA3}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{42B2795C-426E-4227-9A24-56356D3A1EA3}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{42B2795C-426E-4227-9A24-56356D3A1EA3}.Release|Any CPU.Build.0 = Release|Any CPU
+		{F43DB271-F5C8-42B9-B1E7-238AB4F9C8AE}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{F43DB271-F5C8-42B9-B1E7-238AB4F9C8AE}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{F43DB271-F5C8-42B9-B1E7-238AB4F9C8AE}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{F43DB271-F5C8-42B9-B1E7-238AB4F9C8AE}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
