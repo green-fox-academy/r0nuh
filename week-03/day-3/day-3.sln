@@ -17,6 +17,8 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "06-centered-square", "06-ce
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "07-four-color-rectangles", "07-four-color-rectangles\07-four-color-rectangles.csproj", "{F43DB271-F5C8-42B9-B1E7-238AB4F9C8AE}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "08-position-square", "08-position-square\08-position-square.csproj", "{6BFAB884-1DEC-40D8-BF32-37949C960624}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -51,6 +53,10 @@ Global
 		{F43DB271-F5C8-42B9-B1E7-238AB4F9C8AE}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{F43DB271-F5C8-42B9-B1E7-238AB4F9C8AE}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{F43DB271-F5C8-42B9-B1E7-238AB4F9C8AE}.Release|Any CPU.Build.0 = Release|Any CPU
+		{6BFAB884-1DEC-40D8-BF32-37949C960624}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{6BFAB884-1DEC-40D8-BF32-37949C960624}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{6BFAB884-1DEC-40D8-BF32-37949C960624}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{6BFAB884-1DEC-40D8-BF32-37949C960624}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
