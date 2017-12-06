@@ -11,6 +11,8 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "03-diagonals", "03-diagonal
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "04-go-to-center", "04-go-to-center\04-go-to-center.csproj", "{BED8A299-F3D8-4566-A8FE-B25DF626E489}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "05-horizontal", "05-horizontal\05-horizontal.csproj", "{6DA943F0-00D6-46EA-972B-0DA89B983B1B}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -33,6 +35,10 @@ Global
 		{BED8A299-F3D8-4566-A8FE-B25DF626E489}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{BED8A299-F3D8-4566-A8FE-B25DF626E489}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{BED8A299-F3D8-4566-A8FE-B25DF626E489}.Release|Any CPU.Build.0 = Release|Any CPU
+		{6DA943F0-00D6-46EA-972B-0DA89B983B1B}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{6DA943F0-00D6-46EA-972B-0DA89B983B1B}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{6DA943F0-00D6-46EA-972B-0DA89B983B1B}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{6DA943F0-00D6-46EA-972B-0DA89B983B1B}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
