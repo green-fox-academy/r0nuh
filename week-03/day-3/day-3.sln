@@ -9,6 +9,8 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "02-colored-box", "02-colore
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "03-diagonals", "03-diagonals\03-diagonals.csproj", "{4C14BDA5-BD52-4CD8-A012-3BCD9787C534}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "04-go-to-center", "04-go-to-center\04-go-to-center.csproj", "{BED8A299-F3D8-4566-A8FE-B25DF626E489}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -27,6 +29,10 @@ Global
 		{4C14BDA5-BD52-4CD8-A012-3BCD9787C534}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{4C14BDA5-BD52-4CD8-A012-3BCD9787C534}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{4C14BDA5-BD52-4CD8-A012-3BCD9787C534}.Release|Any CPU.Build.0 = Release|Any CPU
+		{BED8A299-F3D8-4566-A8FE-B25DF626E489}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{BED8A299-F3D8-4566-A8FE-B25DF626E489}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{BED8A299-F3D8-4566-A8FE-B25DF626E489}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{BED8A299-F3D8-4566-A8FE-B25DF626E489}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
