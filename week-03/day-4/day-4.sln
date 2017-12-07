@@ -9,8 +9,11 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "02-numberadder", "02-number
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "03-sumdigit", "03-sumdigit\03-sumdigit.csproj", "{F428AD5B-45A8-4E3B-83C7-43146A994C69}"
 EndProject
+<<<<<<< HEAD
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "04-power", "06-power\04-power.csproj", "{67161896-480D-49F2-A082-3E131B00BC76}"
 EndProject
+=======
+>>>>>>> 10fc96d03b815064583c73f52e32893708e65f51
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -29,10 +32,13 @@ Global
 		{F428AD5B-45A8-4E3B-83C7-43146A994C69}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{F428AD5B-45A8-4E3B-83C7-43146A994C69}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{F428AD5B-45A8-4E3B-83C7-43146A994C69}.Release|Any CPU.Build.0 = Release|Any CPU
+<<<<<<< HEAD
 		{67161896-480D-49F2-A082-3E131B00BC76}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
 		{67161896-480D-49F2-A082-3E131B00BC76}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{67161896-480D-49F2-A082-3E131B00BC76}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{67161896-480D-49F2-A082-3E131B00BC76}.Release|Any CPU.Build.0 = Release|Any CPU
+=======
+>>>>>>> 10fc96d03b815064583c73f52e32893708e65f51
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
