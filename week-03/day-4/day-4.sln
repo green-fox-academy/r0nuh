@@ -13,6 +13,8 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "04-powerN", "04-powerN\04-p
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "05-bunnies", "05-bunnies\05-bunnies.csproj", "{6F6FFF6B-DBE1-499C-B6EE-F95590AA3A96}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "06-bunnies2", "06-bunnies2\06-bunnies2.csproj", "{C24B8C0A-C4D4-41EF-BBD1-FED764955C6F}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -39,6 +41,10 @@ Global
 		{6F6FFF6B-DBE1-499C-B6EE-F95590AA3A96}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{6F6FFF6B-DBE1-499C-B6EE-F95590AA3A96}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{6F6FFF6B-DBE1-499C-B6EE-F95590AA3A96}.Release|Any CPU.Build.0 = Release|Any CPU
+		{C24B8C0A-C4D4-41EF-BBD1-FED764955C6F}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{C24B8C0A-C4D4-41EF-BBD1-FED764955C6F}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{C24B8C0A-C4D4-41EF-BBD1-FED764955C6F}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{C24B8C0A-C4D4-41EF-BBD1-FED764955C6F}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
