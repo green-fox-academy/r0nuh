@@ -17,7 +17,7 @@ namespace _01_divide_by_zero
 
             try
             {
-            Divide10();
+                Divide10();
             }
             catch (DivideByZeroException)
             {
