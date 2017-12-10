@@ -13,16 +13,9 @@ namespace _06_copy_file
 
             string fileFrom = @"C:\Users\Szilard\Documents\greenfox\r0nuh\week-03\day-1\my-file.txt";
             string fileTo = @"C:\Users\Szilard\Documents\greenfox\r0nuh\week-03\day-1\my-file-copy.txt";
-
-            //try 
-	        //{	        
+        
             Console.WriteLine(Copy(fileFrom, fileTo));
-            
-
-            Console.Read();
-	        //}
-	        //finally
-	        //{
+             Console.Read();
           
         }
         static bool Copy(string path1, string path2)
@@ -31,8 +24,8 @@ namespace _06_copy_file
 
             if(content != null) 
             {
-            File.WriteAllText(path2, content);
-            return true;
+                File.WriteAllText(path2, content);
+                return true;
             }
             else 
             {
