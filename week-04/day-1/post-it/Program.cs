@@ -13,14 +13,14 @@ namespace post_it
             postIt1.TextColor = "blue";
 
             PostIt postIt2 = new PostIt();
-            postIt2.BackgroundColor = "orange";
+            postIt2.BackgroundColor = "pink";
             postIt2.Text = "Awesome";
-            postIt2.TextColor = "blue";
+            postIt2.TextColor = "black";
 
             PostIt postIt3 = new PostIt();
-            postIt3.BackgroundColor = "orange";
+            postIt3.BackgroundColor = "yellow";
             postIt3.Text = "Superb!";
-            postIt3.TextColor = "blue";
+            postIt3.TextColor = "green";
         }
     }
 }
