@@ -21,9 +21,8 @@ namespace Reverse
         {
             foreach (int number in array)
             {
-                Console.WriteLine(number);
+                Console.Write(number + " ");
             }
-
         }
     }
 }
