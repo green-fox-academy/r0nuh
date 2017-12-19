@@ -35,12 +35,12 @@ namespace FleetOfThings
                 if (item.Completed == false)
                 {
                     ++i;
-                    Console.WriteLine("{0}. [ ] {1} {2}", i, item.Name);
+                    Console.WriteLine("{0}. [ ] {1}", i, item.Name);
                 }
                 else
                 {
                     ++i;
-                    Console.WriteLine("{0}. [X] {1} {2}", i, item.Name);
+                    Console.WriteLine("{0}. [X] {1}", i, item.Name);
                 }
 
             }
