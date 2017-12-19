@@ -7,6 +7,8 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "post-it", "post-it\post-it.
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "blog-post", "blog-post\blog-post.csproj", "{4A105285-81A9-4D30-979B-4036EDD0E4F0}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "fleet-of-things", "fleet-of-things\fleet-of-things.csproj", "{9957092C-F955-4DCD-87CF-17C24E64E3EC}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -21,6 +23,10 @@ Global
 		{4A105285-81A9-4D30-979B-4036EDD0E4F0}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{4A105285-81A9-4D30-979B-4036EDD0E4F0}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{4A105285-81A9-4D30-979B-4036EDD0E4F0}.Release|Any CPU.Build.0 = Release|Any CPU
+		{9957092C-F955-4DCD-87CF-17C24E64E3EC}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{9957092C-F955-4DCD-87CF-17C24E64E3EC}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{9957092C-F955-4DCD-87CF-17C24E64E3EC}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{9957092C-F955-4DCD-87CF-17C24E64E3EC}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
