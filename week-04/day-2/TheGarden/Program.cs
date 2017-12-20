@@ -8,10 +8,10 @@ namespace TheGarden
         {
             var garden = new Garden();
 
-            garden.Plants.Add(new Flower("yellow", 1));
-            garden.Plants.Add(new Flower("blue", 1));
-            garden.Plants.Add(new Tree("orange", 1));
-            garden.Plants.Add(new Tree("purple", 1));
+            garden.AddPlant(new Flower("yellow", 1));
+            garden.AddPlant(new Flower("blue", 1));
+            garden.AddPlant(new Tree("orange", 1));
+            garden.AddPlant(new Tree("purple", 1));
 
             garden.GardenCheck();
 
