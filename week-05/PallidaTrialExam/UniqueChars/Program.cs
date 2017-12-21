@@ -1,12 +1,9 @@
 ﻿using System;
 using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
 
 namespace UniqueChars
 {
-    class Program
+    public class Program
     {
         static void Main(string[] args)
         {
@@ -16,7 +13,7 @@ namespace UniqueChars
             // Print the characters from that list in the following format:
             // "n", "g", "r", "m"
 
-            Print(UniqueCharacters("alma"));
+            Print(UniqueCharacters("anagram"));
 
             Console.Read();
         }
@@ -26,28 +23,18 @@ namespace UniqueChars
             List<char> letters = new List<char>();
 
             char[] characters = param.ToCharArray();
-            //Array.Sort(characters);
 
             for (int i = 0; i < characters.Length; i++)
             {
-                foreach (var letter in characters)
-                {
-                    if (letter != characters[i])
-                        letters.Add(letter);
-                }
-                //for (int j = 0; j < characters.Length; j++)
-                //{
-                //    if (i != j && characters[i] == characters[j]) { }
-
-                //    else if (i != j && characters[i] != characters[j])
-                //        {
-                //        //if (characters[i] != characters[j])
-                //            letters.Add(characters[j]);
-                //    }
+                int n = 0;
                 
-              
+                for (int j = 0; j < characters.Length; j++)
                 {
+                    if (characters[i] == characters[j])
+                        n++;
                 }
+                if (n < 2)
+                    letters.Add(characters[i]);
             }
             return letters;
         }
