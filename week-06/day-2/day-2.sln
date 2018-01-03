@@ -15,6 +15,8 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "FrequencyOfNumbers", "Frequ
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "FrequencyOfCharacters", "FrequencyOfCharacters\FrequencyOfCharacters.csproj", "{FBDDAF2A-5863-46A8-801D-BB46644FBE86}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Cities", "Cities\Cities.csproj", "{D02C7317-8253-4B49-A384-815CAAA4883A}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -45,6 +47,10 @@ Global
 		{FBDDAF2A-5863-46A8-801D-BB46644FBE86}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{FBDDAF2A-5863-46A8-801D-BB46644FBE86}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{FBDDAF2A-5863-46A8-801D-BB46644FBE86}.Release|Any CPU.Build.0 = Release|Any CPU
+		{D02C7317-8253-4B49-A384-815CAAA4883A}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{D02C7317-8253-4B49-A384-815CAAA4883A}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{D02C7317-8253-4B49-A384-815CAAA4883A}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{D02C7317-8253-4B49-A384-815CAAA4883A}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
