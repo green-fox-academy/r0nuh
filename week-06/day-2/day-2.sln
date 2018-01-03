@@ -11,6 +11,8 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "SquaredNumbers", "SquaredNu
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "MoreThen20", "MoreThen20\MoreThen20.csproj", "{7C6ABEEF-B724-4C81-98BC-B660A07CE3B4}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "FrequencyOfNumbers", "FrequencyOfNumbers\FrequencyOfNumbers.csproj", "{1DA560AE-E559-4BF0-9430-7FF3B747D954}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -33,6 +35,10 @@ Global
 		{7C6ABEEF-B724-4C81-98BC-B660A07CE3B4}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{7C6ABEEF-B724-4C81-98BC-B660A07CE3B4}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{7C6ABEEF-B724-4C81-98BC-B660A07CE3B4}.Release|Any CPU.Build.0 = Release|Any CPU
+		{1DA560AE-E559-4BF0-9430-7FF3B747D954}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{1DA560AE-E559-4BF0-9430-7FF3B747D954}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{1DA560AE-E559-4BF0-9430-7FF3B747D954}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{1DA560AE-E559-4BF0-9430-7FF3B747D954}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
