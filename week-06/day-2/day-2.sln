@@ -17,6 +17,8 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "FrequencyOfCharacters", "Fr
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Cities", "Cities\Cities.csproj", "{D02C7317-8253-4B49-A384-815CAAA4883A}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "UppercaseChars", "UppercaseChars\UppercaseChars.csproj", "{383F847D-6906-484F-B2C4-3D6EAEB5AF1A}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -51,6 +53,10 @@ Global
 		{D02C7317-8253-4B49-A384-815CAAA4883A}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{D02C7317-8253-4B49-A384-815CAAA4883A}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{D02C7317-8253-4B49-A384-815CAAA4883A}.Release|Any CPU.Build.0 = Release|Any CPU
+		{383F847D-6906-484F-B2C4-3D6EAEB5AF1A}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{383F847D-6906-484F-B2C4-3D6EAEB5AF1A}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{383F847D-6906-484F-B2C4-3D6EAEB5AF1A}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{383F847D-6906-484F-B2C4-3D6EAEB5AF1A}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
