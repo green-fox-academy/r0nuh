@@ -1,0 +1,17 @@
+﻿@model SayHello.Models.Hellos
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+    <title></title>
+</head>
+<body style="background-color:aliceblue">
+    @foreach (var hello in Model.HelloArray)
+    {
+        Random rnd = new Random();
+        
+        <span style="color:rgb(@rnd.Next(255),@rnd.Next(255),@rnd.Next(255)); font-size: @rnd.Next(20, 50)px;">
+            @hello!
+        </span>
+    }
+</body>
+</html>

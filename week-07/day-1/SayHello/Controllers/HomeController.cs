@@ -8,14 +8,12 @@ using Microsoft.AspNetCore.Mvc;
 
 namespace SayHello.Controllers
 {
-    //[Route("")]
     public class HomeController : Controller
     {
-        [Route("hello")]
-        public IActionResult Hello()
+        // GET: /<controller>/
+        public IActionResult Index()
         {
-
-            return Content("Hello r0nuh!");
+            return View();
         }
     }
 }

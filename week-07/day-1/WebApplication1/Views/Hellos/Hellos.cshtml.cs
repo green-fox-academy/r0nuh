@@ -5,9 +5,9 @@ using System.Threading.Tasks;
 using Microsoft.AspNetCore.Mvc;
 using Microsoft.AspNetCore.Mvc.RazorPages;
 
-namespace SayHello.Views.Web
+namespace SayHello.Views.Hellos
 {
-    public class GreetingModel : PageModel
+    public class HellosModel : PageModel
     {
         public void OnGet()
         {

@@ -5,9 +5,8 @@ using System.Threading.Tasks;
 
 namespace SayHello.Models
 {
-    public class Greeting
+    public class Hellos
     {
-        public long Id { get; set; }
-        public string Content { get; set; }
+        public string[] HelloArray { get; set; }
     }
 }
