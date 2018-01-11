@@ -1,0 +1,13 @@
+﻿@model Counter.Models.Number
+
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+    <title></title>
+</head>
+<body>
+    <h2>@Model.ToBeIncremented</h2>
+    <form action="/add" method="post">
+        <button type="submit">Increment</button>
+    </form>
+</body>
+</html>
