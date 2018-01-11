@@ -1,8 +1,4 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Threading.Tasks;
-using GreetSomeone.Models;
+﻿using GreetSomeone.Models;
 using Microsoft.AspNetCore.Mvc;
 
 // For more information on enabling MVC for empty projects, visit https://go.microsoft.com/fwlink/?LinkID=397860
@@ -12,11 +8,11 @@ namespace GreetSomeone.Controllers
     [Route("")]
     public class HomeController : Controller
     {
-        private User name;
+        private User user;
 
         public HomeController(User name)
         {
-            this.name = name;
+            this.user = name;
         }
 
         [HttpGet("")]
@@ -26,15 +22,16 @@ namespace GreetSomeone.Controllers
         }
 
         [HttpPost("")]
-        public IActionResult Submit()
+        public IActionResult Submit(string name)
         {
+            user.Name = name;
             return RedirectToAction("Greet");
         }
 
         [HttpGet("greet")]
         public IActionResult Greet()
         {
-            return Ok();
+            return View(user);
         }
     }
 }
