@@ -1,6 +1,6 @@
-﻿@model System.Collections.Generic.List<BankOfSimba.Models.BankAccount>
-
-<html xmlns="http://www.w3.org/1999/xhtml">
+﻿@model System.Collections.Generic.List<BankOfSimba.Models.Client>
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml" lang="en">
 <head>
     <title>Bank of Simba</title>
     <link rel="stylesheet" type="text/css" href="~/style.css">
@@ -17,7 +17,7 @@
         @foreach (var account in @Model)
         {
         <tr>
-            <td>@Model.IndexOf(account)</td>
+            <td>@(Model.IndexOf(account) + 1)</td>
             <td>@account.Name</td>
             <td>@account.Balance.ToString("N2")  @account.Currency</td>
             <td>@account.AnimalType</td>
@@ -31,7 +31,12 @@
             }
         </tr>
         }
-        
     </table>
+    <br />   
+    <form action="/form" method="get">
+        <button type="submit">Add Account</button>
+    </form>
+        
+
 </body>
 </html>

@@ -5,7 +5,7 @@ using System.Threading.Tasks;
 
 namespace BankOfSimba.Models
 {
-    public class BankAccount
+    public class Client
     {
         public string Name { get; set; }
         public double Balance { get; set; }
@@ -13,7 +13,7 @@ namespace BankOfSimba.Models
         public string Currency { get; set; }
         public bool King { get; set; }
 
-        public BankAccount(string name, double balance, string animal, bool king = false)
+        public Client(string name, double balance, string animal, bool king = false)
         {
             Name = name;
             Balance = balance;

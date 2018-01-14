@@ -9,20 +9,28 @@ using Microsoft.AspNetCore.Mvc;
 
 namespace BankOfSimba.Controllers
 {
+    [Route("")]
     public class HomeController : Controller
     {
-        public static List<BankAccount> BankAccounts = new List<BankAccount>()
+        //private Client client;
+
+        public static List<Client> BankAccounts = new List<Client>()
         {
-            new BankAccount("Pumbaa", 100, "Warthog"),
-            new BankAccount("Timon", 250, "Meerkat"),
-            new BankAccount("Rafiki", 1500, "Baboon"),
-            new BankAccount("Zazu", 456, "Red-billed Hornbill")
+            new Client("Pumbaa", 100, "Warthog"),
+            new Client("Timon", 250, "Meerkat"),
+            new Client("Rafiki", 1500, "Baboon"),
+            new Client("Zazu", 456, "Red-billed Hornbill")
         };
 
-        [Route("Simba")]
+        //public HomeController(Client client)
+        //{
+        //    this.client = client;
+        //}
+
+        [HttpGet("")]
         public IActionResult Index()
         {
-            var bankAcc = new BankAccount("Simba", 2000, "Lion")
+            var bankAcc = new Client("Simba", 2000, "Lion")
             {
                 King = true
             };
@@ -31,7 +39,21 @@ namespace BankOfSimba.Controllers
             return View(bankAcc);
         }
 
-        [Route("bank")]
+        [HttpGet("form")]
+        public IActionResult Form()
+        {
+            return View();
+        }
+
+        [HttpPost("add")]
+        public IActionResult AddAccount(Client client)
+        {
+            BankAccounts.Add(client);
+
+            return RedirectToAction("/bank");
+        }
+
+        [HttpGet("bank")]
         public IActionResult Accounts()
         {
             return View(BankAccounts);
