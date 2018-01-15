@@ -46,11 +46,15 @@ namespace BankOfSimba.Controllers
         }
 
         [HttpPost("add")]
-        public IActionResult AddAccount(Client client)
+        public IActionResult AddAccount(string name, double balance, string animal, bool king)
         {
-            BankAccounts.Add(client);
+            Client newclient = new Client(name, balance, animal, king);
+            if (king == true)
+                newclient.King = true;
 
-            return RedirectToAction("/bank");
+            BankAccounts.Add(newclient);
+
+            return RedirectToAction("Accounts");
         }
 
         [HttpGet("bank")]
