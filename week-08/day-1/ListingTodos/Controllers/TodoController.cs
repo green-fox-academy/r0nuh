@@ -20,15 +20,14 @@ namespace ListingTodos.Controlls
             this.todoRepository = todoRepository;
         }
 
-
         [HttpGet("")]
         [Route("list")]
         public IActionResult List()
         {
             List<Todo> TodoList = new List<Todo>()
             {
-               new Todo() {Title = "Start the day" },
-               new Todo() {Title = "Create CRUD project" }
+               //new Todo() {Title = "Start the day" },
+               //new Todo() {Title = "Create CRUD project" }
             };
 
             return View(TodoList);
