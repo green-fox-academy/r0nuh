@@ -1,4 +1,4 @@
-﻿@model System.Collections.Generic.List<ListingTodos.Models.Todo>;
+﻿@model System.Collections.Generic.List<ListingTodos.Models.Todo>
 
 <html xmlns="http://www.w3.org/1999/xhtml">
 <head>
@@ -6,11 +6,26 @@
 </head>
 <body>
     <h1>TODOs for today:</h1>
+    <table style="width:20%" align="center" rules="all">
+        <thead align="center">
+            <tr>
+                <th>ID</th>
+                <th>Task</th>
+                <th>Done</th>
+                <th>Urgent</th>
+            </tr>
+        </thead>
     @foreach (var item in Model)
     {
-    <ul>
-        <li>@item.Title</li>
-    </ul>
+        <tbody align="center">
+            <tr>
+                <td>@item.Id</td>
+                <td>@item.Title</td>
+                <td>@item.IsDone</td>
+                <td>@item.IsUrgent</td>
+            </tr>
+        </tbody>
     }
+    </table>
 </body>
 </html>

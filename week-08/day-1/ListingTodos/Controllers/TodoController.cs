@@ -24,13 +24,8 @@ namespace ListingTodos.Controlls
         [Route("list")]
         public IActionResult List()
         {
-            List<Todo> TodoList = new List<Todo>()
-            {
-               //new Todo() {Title = "Start the day" },
-               //new Todo() {Title = "Create CRUD project" }
-            };
-
-            return View(TodoList);
+            var todos = todoRepository.ListAll();
+            return View(todos);
         }
     }
 }

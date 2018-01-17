@@ -1,4 +1,7 @@
 ﻿using ListingTodos.Entities;
+using ListingTodos.Models;
+using System.Collections.Generic;
+using System.Linq;
 
 namespace ListingTodos.Repositories
 {
@@ -9,6 +12,11 @@ namespace ListingTodos.Repositories
         public TodoRepository(TodoContext todoContext)
         {
             this.todoContext = todoContext;
+        }
+
+        public List<Todo> ListAll()
+        {
+            return todoContext.Todos.ToList();
         }
     }
 }
