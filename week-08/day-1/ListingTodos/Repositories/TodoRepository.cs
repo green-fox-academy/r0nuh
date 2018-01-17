@@ -14,9 +14,14 @@ namespace ListingTodos.Repositories
             this.todoContext = todoContext;
         }
 
-        public List<Todo> ListAll()
+        public IList<Todo> ListAll()
         {
             return todoContext.Todos.ToList();
+        }
+
+        public IList<Todo> IsActive()
+        {
+            return todoContext.Todos.Where(x => x.IsDone == false).ToList();
         }
     }
 }

@@ -22,10 +22,18 @@ namespace ListingTodos.Controlls
 
         [HttpGet("")]
         [Route("list")]
-        public IActionResult List()
+        public IActionResult List([FromQuery] bool isActive)
         {
-            var todos = todoRepository.ListAll();
-            return View(todos);
+            if (isActive == false)
+                return View(todoRepository.ListAll());
+
+            else if(isActive == true)
+                return View(todoRepository.IsActive());
+
+            else
+                return View(todoRepository.ListAll());
         }
+
+        
     }
 }

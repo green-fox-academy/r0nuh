@@ -27,6 +27,7 @@ namespace ListingTodos
             }
 
             app.UseMvc();
+            app.UseStaticFiles();
         }
     }
 }
