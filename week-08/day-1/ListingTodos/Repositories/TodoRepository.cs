@@ -23,5 +23,15 @@ namespace ListingTodos.Repositories
         {
             return todoContext.Todos.Where(x => x.IsDone == false).ToList();
         }
+
+        public void AddTodo(string title)
+        {
+            Todo newTodo = new Todo()
+            {
+                Title = title
+            };
+            todoContext.Todos.Add(newTodo);
+            todoContext.SaveChanges();
+        }
     }
 }

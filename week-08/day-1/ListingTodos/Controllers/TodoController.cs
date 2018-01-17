@@ -34,6 +34,17 @@ namespace ListingTodos.Controlls
                 return View(todoRepository.ListAll());
         }
 
-        
+        [HttpGet("add")]
+        public IActionResult Create()
+        {
+            return View();
+        }
+
+        [HttpPost("add")]
+        public IActionResult AddTodo(Todo todo)
+        {
+            todoRepository.AddTodo(todo.Title);
+            return RedirectToAction("List");
+        }
     }
 }

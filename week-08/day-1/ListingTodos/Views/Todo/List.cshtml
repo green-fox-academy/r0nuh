@@ -1,5 +1,5 @@
 ﻿@model System.Collections.Generic.IList<ListingTodos.Models.Todo>
-
+<!DOCTYPE html>
 <html xmlns="http://www.w3.org/1999/xhtml">
 <head>
     <title>TODOs</title>
@@ -7,6 +7,9 @@
     <meta name="viewport" content="width=device-width, initial-scale=1">
 </head>
 <body>
+    <form action="/todo/add" method="get">
+        <button type="submit" class="btn btn-success">Add new todo</button>
+    </form>
     <div class="container theme-showcase" role="main">
         <div class="page-header">
             <h1>TODOs for today:</h1>
@@ -22,20 +25,22 @@
                             <th scope="col">Urgent</th>
                         </tr>
                     </thead>
-                <tbody>
-                    @foreach (var item in Model)
-                    {
-                    <tr>
-                        <td>@item.Id</td>
-                        <td>@item.Title</td>
-                        <td>@item.IsDone</td>
-                        <td>@item.IsUrgent</td>
-                    </tr>
-                    }
-                </tbody>
+                    <tbody>
+                        @foreach (var item in Model)
+                        {
+                            <tr>
+                                <td>@item.Id</td>
+                                <td>@item.Title</td>
+                                <td>@item.IsDone</td>
+                                <td>@item.IsUrgent</td>
+                            </tr>
+                        }
+                    </tbody>
                 </table>
             </div>
         </div>
     </div>
+    <script src="~/lib/jquery/dist/jquery.min.js"></script>
+    <script src="~/lib/bootstrap/dist/js/bootstrap.min.js"></script>
 </body>
 </html>
