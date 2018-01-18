@@ -44,7 +44,8 @@
                             <td>@item.IsDone</td>
                             <td>@item.IsUrgent</td>
                             <td>
-                                <form action="/todo/{@item.Id}/delete" method="post">
+                                <form action="/todo/delete?id=@item.Id" method="post">
+                                    @*<input type="hidden" value="id=@item.Id" />*@
                                     <button type="submit" class="btn btn-danger">
                                         <span class="glyphicon glyphicon-trash" aria-hidden="true"></span>
                                     </button>

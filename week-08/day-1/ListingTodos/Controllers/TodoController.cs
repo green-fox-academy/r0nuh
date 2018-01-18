@@ -43,8 +43,8 @@ namespace ListingTodos.Controlls
             return RedirectToAction("List");
         }
 
-        [HttpPost("{id}/delete")]
-        public IActionResult Delete([FromQuery]long id)
+        [HttpPost("delete")]
+        public IActionResult Delete([FromQuery] long id)
         {
             todoRepository.Remove(id);
             return RedirectToAction("List");
