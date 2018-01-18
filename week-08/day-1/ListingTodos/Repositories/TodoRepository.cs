@@ -31,6 +31,26 @@ namespace ListingTodos.Repositories
                 Title = title
             };
             todoContext.Todos.Add(newTodo);
+
+            todoContext.SaveChanges();
+        }
+
+        public void Remove(long id)
+        {
+            Todo deleted = todoContext.Todos.FirstOrDefault(x => x.Id == id);
+            todoContext.Todos.Remove(deleted);
+            todoContext.SaveChanges();
+        }
+
+        public void Edit(Todo todo)
+        {
+            Todo edited = todoContext.Todos.FirstOrDefault(x => x.Id == todo.Id);
+
+            todo.Title = edited.Title;
+            edited.IsDone = todo.IsDone;
+            edited.IsUrgent = todo.IsUrgent;
+
+            todoContext.Todos.Update(edited);
             todoContext.SaveChanges();
         }
     }

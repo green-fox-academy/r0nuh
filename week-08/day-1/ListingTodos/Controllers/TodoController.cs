@@ -26,12 +26,8 @@ namespace ListingTodos.Controlls
         {
             if (isActive == false)
                 return View(todoRepository.ListAll());
-
-            else if(isActive == true)
-                return View(todoRepository.IsActive());
-
             else
-                return View(todoRepository.ListAll());
+                return View(todoRepository.IsActive());
         }
 
         [HttpGet("add")]
@@ -44,6 +40,26 @@ namespace ListingTodos.Controlls
         public IActionResult AddTodo(Todo todo)
         {
             todoRepository.AddTodo(todo.Title);
+            return RedirectToAction("List");
+        }
+
+        [HttpPost("{id}/delete")]
+        public IActionResult Delete([FromQuery]long id)
+        {
+            todoRepository.Remove(id);
+            return RedirectToAction("List");
+        }
+
+        [HttpGet("edit")]
+        public IActionResult Edit()
+        {
+            return View();
+        }
+
+        [HttpPost("edit")]
+        public IActionResult Update(Todo todo)
+        {
+            todoRepository.Edit(todo);
             return RedirectToAction("List");
         }
     }
