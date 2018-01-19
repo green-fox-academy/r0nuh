@@ -42,11 +42,16 @@ namespace ListingTodos.Repositories
             todoContext.SaveChanges();
         }
 
+        public Todo TodoDetails(long id)
+        {
+            return todoContext.Todos.FirstOrDefault(x => x.Id == id);
+        }
+
         public void Edit(Todo todo)
         {
             Todo edited = todoContext.Todos.FirstOrDefault(x => x.Id == todo.Id);
 
-            todo.Title = edited.Title;
+            edited.Title = todo.Title;
             edited.IsDone = todo.IsDone;
             edited.IsUrgent = todo.IsUrgent;
 

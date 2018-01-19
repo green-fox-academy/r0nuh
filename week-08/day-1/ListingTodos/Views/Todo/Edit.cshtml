@@ -1,4 +1,5 @@
-﻿<!DOCTYPE html>
+﻿@model ListingTodos.Models.Todo
+<!DOCTYPE html>
 <html xmlns="http://www.w3.org/1999/xhtml" lang="en">
 <head>
     <title>Edit todo</title>
@@ -11,10 +12,10 @@
             <h1>Edit todo</h1>
         </div>
         <div class="container col-md-offset-3">
-            <form action="/add" method="post">
+            <form action="todo/edit/@Model.Id" method="post">
                 <div class="form-group">
                     <label class="col-md-2 control-label">Todo Description</label>
-                    <input type="text" class="col-md-3" name="title"><br>
+                    <input type="text" class="col-md-3" name="title" value="@Model.Title"><br>
                 </div>
                 <div class="checkbox col-sm-push-2">
                     <label>
@@ -33,7 +34,7 @@
             </form>
         </div>
     </div>
-        <script src="~/lib/jquery/dist/jquery.min.js"></script>
-        <script src="~/lib/bootstrap/dist/js/bootstrap.min.js"></script>
+    <script src="~/lib/jquery/dist/jquery.min.js"></script>
+    <script src="~/lib/bootstrap/dist/js/bootstrap.min.js"></script>
 </body>
 </html>
