@@ -39,6 +39,12 @@ namespace BankOfSimba.Controllers
             return View(bankAcc);
         }
 
+        [HttpGet("bank")]
+        public IActionResult Accounts()
+        {
+            return View(BankAccounts);
+        }
+
         [HttpGet("form")]
         public IActionResult Form()
         {
@@ -57,10 +63,12 @@ namespace BankOfSimba.Controllers
             return RedirectToAction("Accounts");
         }
 
-        [HttpGet("bank")]
-        public IActionResult Accounts()
+        [HttpPost("bank")]
+        public IActionResult DeleteAccount(string name)
         {
-            return View(BankAccounts);
+            Client deleteAcc = BankAccounts.FirstOrDefault(x => x.Name.Equals(name));
+            BankAccounts.Remove(deleteAcc);
+            return RedirectToAction("Accounts");
         }
     }
 }
