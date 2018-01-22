@@ -47,15 +47,12 @@ namespace ListingTodos.Repositories
             return todoContext.Todos.FirstOrDefault(x => x.Id == id);
         }
 
-        public void Edit(Todo todo)
+        public void Edit(long id, Todo edited)
         {
-            Todo edited = todoContext.Todos.FirstOrDefault(x => x.Id == todo.Id);
-
-            edited.Title = todo.Title;
-            edited.IsDone = todo.IsDone;
-            edited.IsUrgent = todo.IsUrgent;
-
-            todoContext.Todos.Update(edited);
+            todoContext.Todos.FirstOrDefault(x => x.Id == id).Title = edited.Title;
+            todoContext.Todos.FirstOrDefault(x => x.Id == id).IsDone = edited.IsDone;
+            todoContext.Todos.FirstOrDefault(x => x.Id == id).IsUrgent = edited.IsUrgent;
+            //todoContext.Todos.Update(edited);
             todoContext.SaveChanges();
         }
     }

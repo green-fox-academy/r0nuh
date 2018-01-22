@@ -12,7 +12,7 @@
             <h1>Edit todo</h1>
         </div>
         <div class="container col-md-offset-3">
-            <form action="todo/edit/@Model.Id" method="post">
+            <form action="/todo/@Model.Id/edit" method="post">
                 <div class="form-group">
                     <label class="col-md-2 control-label">Todo Description</label>
                     <input type="text" class="col-md-3" name="title" value="@Model.Title"><br>
