@@ -82,5 +82,48 @@ namespace WebApiExercise.Controllers
 
             return NotFound();
         }
+
+        [HttpPost("arrays")]
+        public IActionResult ArrayHandler([FromBody]Item item )
+        {
+            if (item.What == null || item.What == String.Empty)
+            {
+                return Json(new { error = "Please provide what to do with the numbers!" });
+            }
+
+            if (item.Numbers == null || item.Numbers.Length == 0)
+            {
+                return Json(new { error = "Please provide numbers!" });
+            }
+
+            if (item.What.Equals("sum"))
+            {
+                int sum = 0;
+                for (int i = 0; i < item.Numbers.Length; i++)
+                {
+                    sum = sum + item.Numbers[i];
+                }
+                return Json(new { result = sum });
+            }
+            else if (item.What.Equals("multiply"))
+            {
+                int multipl = 1;
+                for (int i = 0; i < item.Numbers.Length; i++)
+                {
+                    multipl *= item.Numbers[i];
+                }
+                return Json(new { result = multipl });
+            }
+            else if (item.What.Equals("double"))
+            {
+                int[] dblArray = item.Numbers;
+                for (int i = 0; i < item.Numbers.Length; i++)
+                {   
+                    dblArray[i] = item.Numbers[i] * 2;
+                }
+                return Json(new { result = dblArray });
+            }
+            return NotFound();
+        }
     }
 }
