@@ -20,7 +20,7 @@ namespace IAmGroot.IntegrationTests
         }
 
         [Fact]
-        public async Task IndexShouldReturnNotOkStatus()
+        public async Task GrootShouldReturnNotOkStatus()
         {
             //act
             var response = await client.GetAsync("/groot");
@@ -30,10 +30,30 @@ namespace IAmGroot.IntegrationTests
         }
 
         [Fact]
-        public async Task WithParameterShouldReturnOkStatus()
+        public async Task GrootWithParameterShouldReturnOkStatus()
         {
             //act
             var response = await client.GetAsync("/groot?message=somemessage");
+
+            //assert
+            Assert.Equal(HttpStatusCode.OK, response.StatusCode);
+        }
+
+        [Fact]
+        public async Task YonduShouldReturnNotOkStatus()
+        {
+            //act
+            var response = await client.GetAsync("/yondu");
+
+            //assert
+            Assert.Equal(HttpStatusCode.BadRequest, response.StatusCode);
+        }
+
+        [Fact]
+        public async Task YonduWithParameterShouldReturnOkStatus()
+        {
+            //act
+            var response = await client.GetAsync("/yondu?distance=100&&time=20");
 
             //assert
             Assert.Equal(HttpStatusCode.OK, response.StatusCode);
