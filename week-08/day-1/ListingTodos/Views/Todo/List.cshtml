@@ -16,16 +16,16 @@
             <button type="submit" class="btn btn-success">Add new todo</button>
         </form><br />
         <div class="row">
-            <div class="col-md-6">
+            <div class="col-md-7">
                 <table class="table table-hover">
                     <thead>
                         <tr>
                             <th scope="col"></th>
-                             
                             <th scope="col">Task</th>
                             <th scope="col">Done</th>
                             <th scope="col">Urgent</th>
                             <th scope="col"></th>
+                            <th scope="col">Created on</th>
                         </tr>
                     </thead>
                     <tbody>
@@ -79,6 +79,7 @@
                                     </button>
                                 </form>
                             </td>
+                            <td>@item.Date.ToString("yyyy/MM/dd")</td>
                         </tr>
                         }
                     </tbody>
