@@ -1,7 +1,7 @@
 ﻿@model System.Collections.Generic.IList<ListingTodos.Models.Todo>
 
 <!DOCTYPE html>
-<html xmlns="http://www.w3.org/1999/xhtml">
+<html xmlns="http://www.w3.org/1999/xhtml" lang="en">
 <head>
     <title>TODOs</title>
     <link href="~/lib/bootstrap/dist/css/bootstrap.min.css" rel="stylesheet" />
@@ -26,6 +26,7 @@
                             <th scope="col">Urgent</th>
                             <th scope="col"></th>
                             <th scope="col">Created on</th>
+                            <th scope="col">User</th>
                         </tr>
                     </thead>
                     <tbody>
@@ -41,37 +42,37 @@
                             </td>
                             @*<td>@item.Id</td>*@
                             @if (item.IsUrgent == true && item.IsDone == true)
-                            {
-                                <td class="bg-danger"><strong><del>@item.Title</del></strong></td>
-                            }
-                            else if (item.IsDone == true)
-                            {
-                                <td><del>@item.Title</del></td>
-                            }
-                            else if (item.IsUrgent == true)
-                            {
-                                <td class="bg-danger"><strong>@item.Title</strong></td>
-                            }
-                            else
-                            {
-                                <td>@item.Title</td> 
-                            }
-                            @if(item.IsDone == true)
-                            {
-                                <td><button class="btn btn-success glyphicon glyphicon-ok"></button></td>
-                            }
-                            else
-                            {
-                                <td></td>
-                            }
-                            @if(item.IsUrgent == true)
-                            {
-                                <td><button class="btn btn-danger glyphicon glyphicon-exclamation-sign"></button></td>
-                            }
-                            else
-                            {
-                                <td></td>
-                            }
+    {
+                        <td class="bg-danger"><strong><del>@item.Title</del></strong></td>
+}
+else if (item.IsDone == true)
+{
+                        <td><del>@item.Title</del></td>
+}
+else if (item.IsUrgent == true)
+{
+                        <td class="bg-danger"><strong>@item.Title</strong></td>
+}
+else
+{
+                        <td>@item.Title</td>
+}
+                            @if (item.IsDone == true)
+    {
+                        <td><button class="btn btn-success glyphicon glyphicon-ok"></button></td>
+}
+else
+{
+                        <td></td>
+}
+                            @if (item.IsUrgent == true)
+    {
+                        <td><button class="btn btn-danger glyphicon glyphicon-exclamation-sign"></button></td>
+}
+else
+{
+                        <td></td>
+}
                             <td>
                                 <form action="/todo/@item.Id/delete" method="post">
                                     <button type="submit" class="btn btn-danger">
@@ -80,6 +81,7 @@
                                 </form>
                             </td>
                             <td>@item.Date.ToString("yyyy/MM/dd")</td>
+                            @*<td>@item.User.Username</td>*@
                         </tr>
                         }
                     </tbody>
