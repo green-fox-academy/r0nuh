@@ -1,5 +1,6 @@
 ﻿using ListingTodos.Entities;
 using ListingTodos.Models;
+using ListingTodos.ViewModels;
 using System.Collections.Generic;
 using System.Linq;
 
@@ -8,20 +9,27 @@ namespace ListingTodos.Repositories
     public class TodoRepository
     {
         private TodoContext todoContext;
+        private TodoViewModel todoViewModel;
 
-        public TodoRepository(TodoContext todoContext)
+        public TodoRepository(TodoContext todoContext, TodoViewModel todoViewModel)
         {
             this.todoContext = todoContext;
+            this.todoViewModel = todoViewModel;
         }
 
-        public IList<Todo> ListAll()
+        public TodoViewModel ListAll()
         {
-            return todoContext.Todos.ToList();
+            todoViewModel.Users = todoContext.Users.ToList();
+            todoViewModel.Todos = todoContext.Todos.ToList();
+
+            return todoViewModel;
         }
 
-        public IList<Todo> IsActive()
+        public TodoViewModel IsActive()
         {
-            return todoContext.Todos.Where(x => x.IsDone == false).ToList();
+            todoViewModel.Users = todoContext.Users.ToList();
+            todoViewModel.Todos = todoContext.Todos.Where(x => x.IsDone == false).ToList();
+            return todoViewModel;
         }
 
         public void AddTodo(string title)
@@ -52,7 +60,23 @@ namespace ListingTodos.Repositories
             todoContext.Todos.FirstOrDefault(x => x.Id == id).Title = edited.Title;
             todoContext.Todos.FirstOrDefault(x => x.Id == id).IsDone = edited.IsDone;
             todoContext.Todos.FirstOrDefault(x => x.Id == id).IsUrgent = edited.IsUrgent;
-            //todoContext.Todos.Update(edited);
+            todoContext.SaveChanges();
+        }
+
+        public User GetUser(string username)
+        {
+            return todoContext.Users.FirstOrDefault(n => n.Username.Equals(username));
+        }
+
+        public void AddUser(User user)
+        {
+            User newUser = new User()
+            {
+                Username = user.Username,
+                Name = user.Name
+            };
+            todoContext.Users.Add(newUser);
+
             todoContext.SaveChanges();
         }
     }

@@ -5,9 +5,13 @@
     <title>Login</title>
 </head>
 <body>
-    <form action="/todo/list" method="post">
-        <input type="text" name="name" value="" />
+    <form action="/todo/list" method="get">
+        <input type="text" name="name" placeholder="Username" />
         <button type="submit">Login</button>
+    </form>
+    <br />
+    <form action="/register" method="get">
+        <button type="submit">Register</button>
     </form>
 </body>
 </html>

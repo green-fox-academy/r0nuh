@@ -1,5 +1,6 @@
 ﻿using ListingTodos.Entities;
 using ListingTodos.Repositories;
+using ListingTodos.ViewModels;
 using Microsoft.AspNetCore.Builder;
 using Microsoft.AspNetCore.Hosting;
 using Microsoft.EntityFrameworkCore;
@@ -16,6 +17,7 @@ namespace ListingTodos
             services.AddMvc();
             services.AddDbContext<TodoContext>(options => options.UseSqlServer("Data Source=(localdb)\\MSSQLLocalDB; Initial Catalog=todoDB; Integrated Security=True; Connect Timeout=30; Encrypt=False; TrustServerCertificate = True; ApplicationIntent = ReadWrite; MultiSubnetFailover = False"));
             services.AddScoped<TodoRepository>();
+            services.AddScoped<TodoViewModel>();
         }
 
         // This method gets called by the runtime. Use this method to configure the HTTP request pipeline.

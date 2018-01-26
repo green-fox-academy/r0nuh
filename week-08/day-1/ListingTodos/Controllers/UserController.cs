@@ -2,6 +2,7 @@
 using System.Collections.Generic;
 using System.Linq;
 using System.Threading.Tasks;
+using ListingTodos.Models;
 using ListingTodos.Repositories;
 using Microsoft.AspNetCore.Mvc;
 
@@ -25,6 +26,17 @@ namespace ListingTodos.Controllers
             return View();
         }
 
+        [HttpGet("register")]
+        public IActionResult Register()
+        {
+            return View();
+        }
 
+        [HttpPost("register")]
+        public IActionResult AddUser(User user)
+        {
+            todoRepository.AddUser(user);
+            return RedirectToAction("Login");
+        }
     }
 }
