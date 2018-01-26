@@ -1,6 +1,7 @@
 ﻿using ListingTodos.Entities;
 using ListingTodos.Models;
 using ListingTodos.ViewModels;
+using Microsoft.EntityFrameworkCore;
 using System.Collections.Generic;
 using System.Linq;
 
@@ -21,7 +22,7 @@ namespace ListingTodos.Repositories
         {
             todoViewModel.Users = todoContext.Users.ToList();
             todoViewModel.Todos = todoContext.Todos.ToList();
-
+            todoContext.Users.Load();
             return todoViewModel;
         }
 

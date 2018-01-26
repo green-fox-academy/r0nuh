@@ -16,7 +16,7 @@
             <button type="submit" class="btn btn-success">Add new todo</button>
         </form><br />
         <div class="row">
-            <div class="col-md-7">
+            <div class="col-md-10">
                 <table class="table table-hover">
                     <thead>
                         <tr>
@@ -81,7 +81,7 @@
                                     </form>
                                 </td>
                                 <td>@item.Date.ToString("yyyy/MM/dd")</td>
-                                <td>@item.User.Username</td>
+                                <td>@Model.Users.FirstOrDefault(x => x.Id == item.User.Id).Username</td>
                             </tr>
                         }
                     </tbody>

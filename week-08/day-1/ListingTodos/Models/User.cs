@@ -10,6 +10,6 @@ namespace ListingTodos.Models
         public long Id { get; set; }
         public string Username {get; set;}
         public string Name { get; set; }
-        public IList<Todo> Todos { get; set; }
+        public List<Todo> Todos { get; set; }
     }
 }
