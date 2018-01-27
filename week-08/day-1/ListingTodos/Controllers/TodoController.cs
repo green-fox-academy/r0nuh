@@ -30,6 +30,15 @@ namespace ListingTodos.Controlls
                 return View(todoRepository.IsActive());
         }
 
+        [HttpPost("list/{username}")]
+        public IActionResult List([FromRoute]string username, User user)
+        {
+            if (user.Username.Equals(username))
+                return View(todoRepository.IsActive());
+            else
+                return View(todoRepository.ListAll());
+        }
+
         [HttpGet("add")]
         public IActionResult Create()
         {
