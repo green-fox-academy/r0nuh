@@ -18,5 +18,10 @@ namespace PallidaExam.Repositories
         {
             return carContext.Cars.ToList();
         }
+
+        public List<Car> FilterPlates(string platenumber)
+        {
+            return carContext.Cars.Where(car => car.LicencePlate.Contains(platenumber)).ToList();
+        }
     }
 }

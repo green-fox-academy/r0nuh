@@ -19,10 +19,13 @@ namespace PallidaExam.Controllers
             this.carRepository = carRepository;
         }
 
-        [HttpGet("/search")]
-        public IActionResult Index()
-        {   
-            return View(carRepository.GetCar());
+        [HttpGet("search")]
+        public IActionResult Index([FromQuery]string platenumber)
+        {
+            if (platenumber == null)
+                return View(carRepository.GetCar());
+            else
+                return View(carRepository.FilterPlates(platenumber));
         }
     }
 }

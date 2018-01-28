@@ -7,10 +7,14 @@
     <meta charset="utf-8" />
 </head>
 <body>
-    <form action="/" method="get">
-        <input type="text" name="LicencePlate" placeholder="Licence Plate" value="" />
-        <button>Search</button>
-    </form><br />
+    <form action="/search" method="get">
+        <input type="text" name="platenumber" placeholder="Licence Plate" value="" />
+        <button type="submit">Search</button>
+    </form>
+    <form action="/search" method="get">
+        <button type="submit">Back</button>
+    </form>
+    <br />
     <table>
         <tr>
             <th>Licence Plate</th>
