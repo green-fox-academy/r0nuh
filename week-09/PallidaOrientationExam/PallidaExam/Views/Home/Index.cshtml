@@ -1,0 +1,34 @@
+﻿@model System.Collections.Generic.List<PallidaExam.Models.Car>
+
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml" lang="en">
+<head>
+    <title>Cars</title>
+    <meta charset="utf-8" />
+</head>
+<body>
+    <form action="/" method="get">
+        <input type="text" name="LicencePlate" placeholder="Licence Plate" value="" />
+        <button>Search</button>
+    </form><br />
+    <table>
+        <tr>
+            <th>Licence Plate</th>
+            <th>Brand</th>
+            <th>Model</th>
+            <th>Color</th>
+            <th>Year</th>
+        </tr>
+        @foreach (var item in @Model)
+        {
+            <tr>
+                <td>@item.LicencePlate</td>
+                <td>@item.Brand</td>
+                <td>@item.Model</td>
+                <td>@item.Color</td>
+                <td>@item.Year</td>
+            </tr>
+        }
+    </table>
+</body>
+</html>
