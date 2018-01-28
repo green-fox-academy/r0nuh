@@ -19,13 +19,17 @@
                 </div>
                 <div class="checkbox col-sm-push-2">
                     <label>
-                        <input type="checkbox" name="isDone" value="true">Done
+                        <input type="checkbox" name="isDone" value="true" checked="@Model.IsDone">Done
                     </label>
                 </div>
                 <div class="checkbox col-sm-push-2">
                     <label>
-                        <input type="checkbox" name="isUrgent" value="true">Urgent
+                        <input type="checkbox" name="isUrgent" value="true" checked="@Model.IsUrgent">Urgent
                     </label>
+                </div>
+                <div class="form-group">
+                    <label class="col-md-2 control-label">User</label>
+                    <input type="text" class="col-md-3" name="username" value=""><br>
                 </div>
                 <button type="submit" class="btn btn-success col-md-2">Save changes</button>
             </form>
