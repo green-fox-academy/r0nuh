@@ -23,5 +23,20 @@ namespace PallidaExam.Repositories
         {
             return carContext.Cars.Where(car => car.LicencePlate.Contains(platenumber)).ToList();
         }
+
+        public List<Car> GetPolice()
+        {
+            return carContext.Cars.Where(car => car.LicencePlate.StartsWith("rb")).ToList();
+        }
+
+        public List<Car> GetDiplomat()
+        {
+            return carContext.Cars.Where(car => car.LicencePlate.StartsWith("dt")).ToList();
+        }
+
+        public List<Car> GetBrand(string brand)
+        {
+            return carContext.Cars.Where(car => car.Brand.Equals(brand)).ToList();
+        }
     }
 }

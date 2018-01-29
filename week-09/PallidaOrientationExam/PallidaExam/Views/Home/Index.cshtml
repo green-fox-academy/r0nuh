@@ -10,6 +10,8 @@
     <form action="/search" method="get">
         <input type="text" name="platenumber" placeholder="Licence Plate" value="" />
         <button type="submit">Search</button>
+        <a href="/search?police=1">Police cars only</a>
+        <a href="/search?diplomat=1">Diplomats only</a>
     </form>
     <form action="/search" method="get">
         <button type="submit">Back</button>
@@ -27,7 +29,9 @@
         {
             <tr>
                 <td>@item.LicencePlate</td>
-                <td>@item.Brand</td>
+                <td>
+                    <a href="/search/@item.Brand">@item.Brand</a>
+                </td>
                 <td>@item.Model</td>
                 <td>@item.Color</td>
                 <td>@item.Year</td>
