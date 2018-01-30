@@ -1,0 +1,38 @@
+﻿@model System.Collections.Generic.List<GreenFoxStore.Models.Item>
+
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml" lang="en">
+<head>
+    <meta charset="utf-8"/>
+    <title>Green Fox Shop</title>
+</head>
+<body>
+    <h1>Green Fox Fashion Web Store</h1>
+    @*<form action="/search" method="get">
+            <input type="text" name="platenumber" placeholder="Licence Plate" value="" />
+            <button type="submit">Search</button>
+            <a href="/search?police=1">Police cars only</a>
+            <a href="/search?diplomat=1">Diplomats only</a>
+        </form>*@
+    <br />
+    <table>
+        <tr>
+            <th>Item name</th>
+            <th>Manufacturer</th>
+            <th>Category</th>
+            <th>Size</th>
+            <th>Unit price</th>
+        </tr>
+        @foreach (var item in Model)
+        {
+            <tr>
+                <td>@item.ItemName</td>
+                <td>@item.Manufacturer</td>
+                <td>@item.Category</td>
+                <td>@item.Size</td>
+                <td>@item.UnitPrice</td>
+            </tr>
+        }
+    </table>
+</body>
+</html>
