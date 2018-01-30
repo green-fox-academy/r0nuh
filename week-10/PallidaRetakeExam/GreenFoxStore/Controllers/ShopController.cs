@@ -22,7 +22,17 @@ namespace GreenFoxStore.Controllers
         [HttpGet("warehouse")]
         public IActionResult Index()
         {
+            ViewBag.GarmentList = warehouseRepository.Warehouse()
+                .GroupBy(x => x.ItemName)
+                .Select(y => y.First())
+                .ToList();
             return View(warehouseRepository.Warehouse());
+        }
+
+        [HttpPost("warehouse/summary")]
+        public IActionResult Summary()
+        {
+            return View();
         }
     }
 }

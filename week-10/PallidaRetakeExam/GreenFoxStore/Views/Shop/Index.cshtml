@@ -8,12 +8,20 @@
 </head>
 <body>
     <h1>Green Fox Fashion Web Store</h1>
-    @*<form action="/search" method="get">
-            <input type="text" name="platenumber" placeholder="Licence Plate" value="" />
-            <button type="submit">Search</button>
-            <a href="/search?police=1">Police cars only</a>
-            <a href="/search?diplomat=1">Diplomats only</a>
-        </form>*@
+    <form action="/warehouse" method="get">
+        <select name="ItemName" placeholder="Choose item">
+            
+            @foreach (var item in @ViewBag.GarmentList)
+            {
+
+                <option value="@item.ItemName">@item.ItemName</option>
+            }
+                        
+        </select>
+        <input type="text" name="quantity" placeholder="Quantity" value="" />
+        <button type="submit">GET TOTAL</button>
+        
+    </form>
     <br />
     <table>
         <tr>
