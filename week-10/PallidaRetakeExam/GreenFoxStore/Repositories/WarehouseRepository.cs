@@ -38,5 +38,10 @@ namespace GreenFoxStore.Repositories
 
             return sizeList;
         }
+
+        public Item GetItem(string itemName, string size)
+        {
+            return warehouseContext.Items.FirstOrDefault(x => x.ItemName.Equals(itemName) && x.Size.Equals(size));
+        }
     }
 }

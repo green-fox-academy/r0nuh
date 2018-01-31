@@ -1,4 +1,37 @@
-﻿@page
-@model SummaryModel
-@{
-}
+﻿@model GreenFoxStore.Models.Item
+
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml" lang="en">
+<head>
+    <meta charset="utf-8" />
+    <title>Green Fox Shop</title>
+</head>
+<body>
+    <table width="60%">
+
+        <caption>
+            <h1>Green Fox Fashion Web Store</h1>
+            <h1>Summary</h1><br />
+        </caption>
+        <tr>
+            <th align="left">Item name</th>
+            <th align="left">Manufacturer</th>
+            <th align="left">Category</th>
+            <th>Size</th>
+            <th>Quantity</th>
+            <th>Sub-total price</th>
+        </tr>
+        <tr>
+            <td>@Model.ItemName</td>
+            <td>@Model.Manufacturer</td>
+            <td>@Model.Category</td>
+            <td align="center">@Model.Size</td>
+            <td align="center">@ViewBag.Quantity</td>
+            <td align="center">@ViewBag.TotalPrice</td>
+        </tr>
+        <tr>
+            <td colspan="6" align="right"><a href="/warehouse">Back to main</a></td>
+        </tr>
+    </table>
+</body>
+</html>

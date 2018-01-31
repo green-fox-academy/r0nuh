@@ -3,38 +3,37 @@
 <!DOCTYPE html>
 <html xmlns="http://www.w3.org/1999/xhtml" lang="en">
 <head>
-    <meta charset="utf-8"/>
+    <meta charset="utf-8" />
     <title>Green Fox Shop</title>
 </head>
 <body>
     <h1>Green Fox Fashion Web Store</h1>
-    <form action="/warehouse" method="get">
+    <form action="/warehouse/summary" method="post">
         <select name="ItemName">
             <option value="" disabled selected hidden>Choose item</option>
             @foreach (var item in @ViewBag.GarmentList)
-    {
-        <option value="@item.ItemName">@item.ItemName</option>
-}
+            {
+                <option value="@item.ItemName">@item.ItemName</option>
+            }
         </select>
         <select name="Size">
             <option value="" disabled selected hidden>Choose size</option>
             @foreach (var item in @ViewBag.SizeList)
-    {
-        <option value="@item.Size">@item.Size</option>
-}
+            {
+                <option value="@item.Size">@item.Size</option>
+            }
         </select>
         <input type="text" name="quantity" placeholder="Quantity" value="" />
         <button type="submit">GET TOTAL</button>
-        
     </form>
     <br />
-    <table>
+    <table width="60%">
         <tr>
-            <th>Item name</th>
-            <th>Manufacturer</th>
-            <th>Category</th>
-            <th>Size</th>
-            <th>Unit price</th>
+            <th align="left">Item name</th>
+            <th align="left">Manufacturer</th>
+            <th align="left">Category</th>
+            <th align="left">Size</th>
+            <th align="left">Unit price</th>
         </tr>
         @foreach (var item in Model)
         {
