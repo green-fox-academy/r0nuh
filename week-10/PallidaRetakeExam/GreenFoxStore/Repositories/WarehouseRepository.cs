@@ -18,5 +18,25 @@ namespace GreenFoxStore.Repositories
         {
             return warehouseContext.Items.ToList();
         }
+
+        public List<Item> ListGarment()
+        {
+            var garmentList = Warehouse()
+                .GroupBy(x => x.ItemName)
+                .Select(y => y.First())
+                .ToList();
+
+            return garmentList;
+        }
+
+        public List<Item> ListSize()
+        {
+            var sizeList = Warehouse()
+                .GroupBy(x => x.Size)
+                .Select(y => y.First())
+                .ToList();
+
+            return sizeList;
+        }
     }
 }

@@ -9,14 +9,19 @@
 <body>
     <h1>Green Fox Fashion Web Store</h1>
     <form action="/warehouse" method="get">
-        <select name="ItemName" placeholder="Choose item">
-            
+        <select name="ItemName">
+            <option value="" disabled selected hidden>Choose item</option>
             @foreach (var item in @ViewBag.GarmentList)
-            {
-
-                <option value="@item.ItemName">@item.ItemName</option>
-            }
-                        
+    {
+        <option value="@item.ItemName">@item.ItemName</option>
+}
+        </select>
+        <select name="Size">
+            <option value="" disabled selected hidden>Choose size</option>
+            @foreach (var item in @ViewBag.SizeList)
+    {
+        <option value="@item.Size">@item.Size</option>
+}
         </select>
         <input type="text" name="quantity" placeholder="Quantity" value="" />
         <button type="submit">GET TOTAL</button>
