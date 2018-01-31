@@ -44,7 +44,7 @@ namespace GreenFoxStore.Repositories
             return warehouseContext.Items.FirstOrDefault(x => x.ItemName.Equals(itemName) && x.Size.Equals(size));
         }
 
-        public List<Item> FilteredList(int price, string relation)
+        public List<Item> FilteredList(int? price, string relation)
         {
             if (relation.Equals("equal"))
                 return Warehouse().Where(x => x.UnitPrice == price).ToList();

@@ -33,9 +33,12 @@ namespace GreenFoxStore.Controllers
         }
 
         [HttpGet("warehouse/query")]
-        public IActionResult Query([FromQuery]int price, [FromQuery]string type)
+        public IActionResult Query([FromQuery]int? price, [FromQuery]string type)
         {
-            return Json(new { result = "ok", clothes = warehouseRepository.FilteredList(price, type) });
+            if (price == null || type == null)
+                return Json(new { error = "price/type is missing [type=lower/higher/equal]" });
+            else
+                return Json(new { result = "ok", clothes = warehouseRepository.FilteredList(price, type) });
         }
     }
 }
