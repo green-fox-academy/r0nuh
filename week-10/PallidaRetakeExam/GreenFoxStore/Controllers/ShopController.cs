@@ -31,5 +31,11 @@ namespace GreenFoxStore.Controllers
             ViewBag.TotalPrice = quantity * warehouseRepository.GetItem(itemName, size).UnitPrice;
             return View(warehouseRepository.GetItem(itemName, size));
         }
+
+        [HttpGet("warehouse/query")]
+        public IActionResult Query([FromQuery]int price, [FromQuery]string type)
+        {
+            return Json(new { result = "ok", clothes = warehouseRepository.FilteredList(price, type) });
+        }
     }
 }
