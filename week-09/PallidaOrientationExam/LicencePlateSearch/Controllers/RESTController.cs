@@ -1,9 +1,6 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Threading.Tasks;
-using Microsoft.AspNetCore.Mvc;
+﻿using Microsoft.AspNetCore.Mvc;
 using PallidaExam.Repositories;
+using System.Linq;
 
 // For more information on enabling MVC for empty projects, visit https://go.microsoft.com/fwlink/?LinkID=397860
 
@@ -22,7 +19,7 @@ namespace LicencePlateSearch.Controllers
         [HttpGet("search/{brand}")]
         public IActionResult FilterBrand([FromRoute]string brand)
         {
-            return Json( new { result = "ok", data = carRepository.GetBrand(brand)});
+            return Json( new { result = "ok", data = carRepository.GetBrand(brand).Select(x => new { x.LicencePlate, x.Brand, x.Model, x.Year, x.Color})});
         }
     }
 }

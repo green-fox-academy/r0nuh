@@ -5,7 +5,7 @@ namespace PallidaExam.Models
 {
     public class Car
     {
-        [JsonIgnore]
+        //[JsonIgnore]
         public long Id { get; set; }
         public string LicencePlate { get; set; }
         public string Brand { get; set; }
