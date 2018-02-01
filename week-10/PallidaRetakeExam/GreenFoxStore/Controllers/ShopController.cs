@@ -22,6 +22,7 @@ namespace GreenFoxStore.Controllers
             ViewBag.SizeList = warehouseRepository.ListSize();
 
             return View(warehouseRepository.Warehouse());
+            //return Ok();
         }
 
         [HttpPost("warehouse/summary")]
@@ -36,7 +37,7 @@ namespace GreenFoxStore.Controllers
         public IActionResult Query([FromQuery]int? price, [FromQuery]string type)
         {
             if (price == null || type == null)
-                return Json(new { error = "price/type is missing [type=lower/higher/equal]" });
+                return StatusCode( 400, new { error = "price/type is missing [type=lower/higher/equal]" });
             else
                 return Json(new { result = "ok", clothes = warehouseRepository.FilteredList(price, type) });
         }
