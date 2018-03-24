@@ -33,6 +33,8 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "exercise25-multiplicationTa
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "exercise26-count-from-to", "exercise26-count-from-to\exercise26-count-from-to.csproj", "{F498EC38-FF69-469E-827B-B018495CA833}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "exercise27-fizz-buzz", "exercise27-fizz-buzz\exercise27-fizz-buzz.csproj", "{736C480F-0C57-437A-B881-06EC13B94431}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -99,6 +101,10 @@ Global
 		{F498EC38-FF69-469E-827B-B018495CA833}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{F498EC38-FF69-469E-827B-B018495CA833}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{F498EC38-FF69-469E-827B-B018495CA833}.Release|Any CPU.Build.0 = Release|Any CPU
+		{736C480F-0C57-437A-B881-06EC13B94431}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{736C480F-0C57-437A-B881-06EC13B94431}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{736C480F-0C57-437A-B881-06EC13B94431}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{736C480F-0C57-437A-B881-06EC13B94431}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
