@@ -17,7 +17,7 @@ namespace GreenFox
             // The triangle should have as many lines as the number was
 
             Console.Write("Give a number: ");
-            int lines = Convert.ToInt32(Console.ReadLine());
+            int lines = int.Parse(Console.ReadLine());
 
             for (int i = 0; i < lines; ++i)
             {
