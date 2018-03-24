@@ -23,15 +23,18 @@ namespace exercise25_multiplicationTable
             // 10 * 15 = 150
 
             Console.Write("Give a number: ");
-            int number = int.Parse(Console.ReadLine());
 
-            for (int i = 1; i <= 10 ; ++i)
+            MultiplicationTableOf(int.Parse(Console.ReadLine()));
+        }
+
+        public static void MultiplicationTableOf(int number)
+        {
+            for (int i = 1; i <= 10; ++i)
             {
                 Console.WriteLine($"{i} * {number} = {i * number}");
             }
 
             Console.Read();
         }
-
     }
 }
