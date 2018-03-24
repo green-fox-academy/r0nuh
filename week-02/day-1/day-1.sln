@@ -31,6 +31,8 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "exercise5", "exercise5\exer
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "exercise25-multiplicationTable", "exercise25-multiplicationTable\exercise25-multiplicationTable.csproj", "{F874BB25-20BB-4503-8D26-42CF70498A72}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "exercise26-count-from-to", "exercise26-count-from-to\exercise26-count-from-to.csproj", "{F498EC38-FF69-469E-827B-B018495CA833}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -93,6 +95,10 @@ Global
 		{F874BB25-20BB-4503-8D26-42CF70498A72}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{F874BB25-20BB-4503-8D26-42CF70498A72}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{F874BB25-20BB-4503-8D26-42CF70498A72}.Release|Any CPU.Build.0 = Release|Any CPU
+		{F498EC38-FF69-469E-827B-B018495CA833}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{F498EC38-FF69-469E-827B-B018495CA833}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{F498EC38-FF69-469E-827B-B018495CA833}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{F498EC38-FF69-469E-827B-B018495CA833}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
