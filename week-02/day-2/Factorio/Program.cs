@@ -9,7 +9,10 @@ namespace Factorio
             // - Create a function called `factorio`
             //   that returns it's input's factorial
 
-            Console.WriteLine(Factorio(5));
+            Console.Write("Give a number: ");
+            int input = int.Parse(Console.ReadLine());
+            int result = Factorio(input);
+            Console.WriteLine($"The factorial of {input} is {result}");
             Console.ReadLine();
         }
 
